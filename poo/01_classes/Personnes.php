@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Ce fichier est la propriété de larav8 (c) 2020
+ * Ce fichier est la propriété de l8 (c) 2020
  */
 
   class Personne
