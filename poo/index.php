@@ -7,9 +7,8 @@
 </head>
 <body>
     <?php
-    include_once '01_classes/Personnes.php';
-    $mister = new Personne();
-    $mister->boire();
+    include_once 'cours/01_Instanciation.php';
+
     ?>
 </body>
 </html>
