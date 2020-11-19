@@ -8,7 +8,10 @@
 <body>
     <?php
     include_once 'cours/01_Instanciation.php';
-
+        echo 'Personne1 <br/>';
+        echo 'Nom: '.$personne1->nom.'<br/>';
+        echo 'Prenom: ' .$personne1->prenom. '<br/>';
+        
     ?>
 </body>
 </html>
