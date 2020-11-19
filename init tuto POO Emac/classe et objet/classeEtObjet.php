@@ -28,6 +28,9 @@ class Personne
 
     public function manger()
     {
-        echo 'La personne mange</br>';
+        echo 'La personne mange</br/>';
     }
+
+    
 }
+?>
