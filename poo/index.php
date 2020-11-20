@@ -24,7 +24,12 @@
         echo '-----------------------------------------------------------------------------------------<br/>';
 
 
-        
+        // Appel de méthode sur des objets
+        echo 'Appel de méthode sur des objets<br/><br/>';
+        echo $personne1->boire().'<br/>';
+        echo $personne2->boire().'<br/>';
+        echo $personne3->manger().'<br/>';
+        echo $personne4->manger().'<br/>';
     ?>
 </body>
 </html>
