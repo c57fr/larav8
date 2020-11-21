@@ -32,7 +32,7 @@ class Vehicule
     // Verifie s'il y'a du carburant danx le reservoir
     private function _controlerVolumeCarburant()
     {
-        return ($this->volumeCarburant > 0); // renvoi true ou false
+        return ($this->_volumeCarburant > 0); // renvoi true ou false
     }
 
     // Met le vehicule en maintenace
