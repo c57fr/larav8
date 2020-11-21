@@ -10,6 +10,8 @@
     
     include_once 'cours/01_Instanciation.php';
     include_once 'cours/01_Vue.php';
+    include_once 'cours/02_Controller.php';
+    include_once 'cours/02_Vue.php';
 
     ?>
 </body>
