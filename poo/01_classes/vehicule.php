@@ -17,8 +17,8 @@ class Vehicule
     // Met le vehicule en maintenance
     public function reparer()
     {
-        $this->estRepare = true;
-        echo 'Le vehicule est en reparation';
+        $this->_estRepare = true;
+        echo 'Le vehicule est en reparation<br>';
     }
     
 }
@@ -39,7 +39,7 @@ class Voiture extends Vehicule
     // Demarre la voiture si le reservoir n'est pas vide
     public function demarrer()
     {
-        if ($this->_controlerVolumeCrburant())
+        if ($this->_controlerVolumeCarburant())
         {
             echo 'Le vehicule demarre';
             return true;
@@ -48,9 +48,21 @@ class Voiture extends Vehicule
         return false;
     }
 
+
     // Verifier qu'il y'a du carburant dans le reservoir
     private function _controlerVolumeCarburant()
     {
         return ($this->_volumeCarburant) > 0;
+    }
+
+    // ... 
+    public function setVolumeCarburant($dVolume)
+    {
+        $this->_volumeCarburant = $dVolume;
+    }
+    // ... 
+    public function getVolumeCarburant()
+    {
+       return $this->_volumeCarburant;
     }
 }
