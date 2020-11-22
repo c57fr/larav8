@@ -12,6 +12,10 @@ $monVehicule = new vehicule();
 // Mise à jour de la marque du vehicule
 $monVehicule->marque = 'Peugeot';
 
+echo str_repeat('-', 90).'<br>';
+$monVehicule = new Voiture('Peugeot');
+$monVehicule->demarrer();
+$monVehicule->reparer();
 
 
 

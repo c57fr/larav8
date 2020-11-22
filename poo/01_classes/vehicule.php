@@ -4,41 +4,53 @@
 class Vehicule
 {
     // Atributs
-    public $marque;
-    private $_volumeCarburant;
+    protected $_marque;
     protected $_estRepare;
 
     // Methodes
-    public function __construct()
+    public function __construct($marque)
     {
-        $this->_volumeCarburant    = 40;
-        $this->_estRepare          = false;
+        $this->_marque = $marque;
+        $this->_estRepare = false;
     }
 
-    //Demarrer la viture si le reservoir n'est pas vide
-    //if ($this->_controlerVolumeCarburant())
+    // Met le vehicule en maintenance
+    public function reparer()
+    {
+        $this->estRepare = true;
+        echo 'Le vehicule est en reparation';
+    }
     
+}
+
+class Voiture extends Vehicule
+{
+    //Attributs
+    private $_volumeCarburant;
+
+    //Methodes
+    public function __construct($marque)
+    {
+        // Appel du constructeur de la classe parente
+        parent::__construct($marque);
+        $this->_volumeCarburant = 40;
+    }
+
+    // Demarre la voiture si le reservoir n'est pas vide
     public function demarrer()
     {
-        if ($this->_controlerVolumeCarburant())
+        if ($this->_controlerVolumeCrburant())
         {
             echo 'Le vehicule demarre';
             return true;
         }
-        echo 'Le reservoir est vide ....';
+        echo 'Le reservoir est vide ...';
         return false;
     }
 
-    // Verifie s'il y'a du carburant danx le reservoir
+    // Verifier qu'il y'a du carburant dans le reservoir
     private function _controlerVolumeCarburant()
     {
-        return ($this->_volumeCarburant > 0); // renvoi true ou false
-    }
-
-    // Met le vehicule en maintenace
-    protected function reparer()
-    {
-        $this->_estRepare = true;
-        echo 'Le vehicule est en reparation';
+        return ($this->_volumeCarburant) > 0;
     }
 }

@@ -6,4 +6,4 @@ echo '<br>';
 
 // Affiche : "Le véhicule démarre"
 //echo $monVehicule->demarrer();
-$monVehicule->demarrer();
+$monVehicule->demarrer().'<br>';
