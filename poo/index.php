@@ -14,6 +14,7 @@
     include_once 'cours/02_Vue.php';
     include_once 'cours/03_controller.php';
     include_once 'cours/03_Vue.php';
+    include_once 'cours/04_controller.php';
 
 
     ?>
