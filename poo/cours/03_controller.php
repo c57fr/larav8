@@ -5,6 +5,6 @@
  */
 
 include_once './01_classes/Kid.php';
-$billy      = new Kid();
-$billy->age = 14;
-// $billy->cheveux = 'noirs';
+$billy          = new Kid();
+$billy->age     = 14;
+$billy->cheveux = 'noirs';

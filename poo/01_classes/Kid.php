@@ -25,7 +25,7 @@ class Kid
     if ('age' === $property && is_numeric($value)) {
       $this->age = (int) $value;
     } else {
-      throw new Exception('Propriété ou valeur invalide');
+      throw new Exception('Propriété ou valeur invalide: '.$property);
     }
   }
 }
