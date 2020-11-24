@@ -19,4 +19,22 @@ class SearchEngine
     //$result = SPDO::getInstance()->query($query);
     return $result->fetchAll(PDO::FETCH_ASSOC);
   }
+
+  public function __call($method, $args)
+  {
+    if(preg_match('#^searchBy#i', $method))
+    {
+      $searchConditions = str_replace('searchBy', '', $method);
+      $searchCriterias = explode('and', $searchConditions);
+      $conditions = array();
+      $nbCriterias = sizeof($searchCriterias);
+
+      for($i = 0; $i < $nbCriterias; $i++)
+      {
+        $conditions[] = strtolower($searchCriterias[$i]). '="'.$args[$i] . '"';
+      }
+      return null;
+    }
+  }
+
 }
