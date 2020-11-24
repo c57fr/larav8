@@ -9,3 +9,11 @@ Synchro des dépôts
 Dans poo/
 
 ## Tuto Laravel8
+
+
+## Outils pré-réglés 
+ 
+### Php-cs-fixer
+
+    composer global require friendsofphp/php-cs-fixer
+

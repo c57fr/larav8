@@ -1,2 +1,9 @@
 <?php
-//echo 'Billy est age de '.$billy->age.' ans et ses cheveux sont de couleur '.$billy->cheveux;
+
+/*
+ * Ce fichier est la propriété de larav8 (c) 2020
+ */
+
+echo $billy->age;
+echo '<br>'.str_repeat('-', 90).'<br>';
+echo 'Exo 3<br>';

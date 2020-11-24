@@ -1,29 +1,31 @@
 <?php
-class Kid{
 
-    //Attributs
-    private $age;
+/*
+ * Ce fichier est la propriété de larav8 (c) 2020
+ */
 
-    // Methodes magiques __get()
-    public function __get($property)
-    {
-        if('age' === $property)
-        {
-            return $this->age;
-        }else{
-            throw new Exception ('Propriete invalide !');
-        }
+class Kid
+{
+  //Attributs
+  private $age;
+
+  // Methodes magiques __get()
+  public function __get($property)
+  {
+    if ('age' === $property) {
+      return $this->age;
     }
 
-    // Methodes magiques __set()
-    public function __set($property, $value)
-    {
-        if('age' === $property && ctype_digit($value))
-        {
-            $this->age = (int) $value;
-        }else{
-            throw new Exception('Propriete ou valeur invalide');
-        }
-    }
+    throw new Exception('Propriété invalide !');
+  }
 
+  // Methodes magiques __set()
+  public function __set($property, $value)
+  {
+    if ('age' === $property && is_numeric($value)) {
+      $this->age = (int) $value;
+    } else {
+      throw new Exception('Propriété ou valeur invalide');
+    }
+  }
 }
