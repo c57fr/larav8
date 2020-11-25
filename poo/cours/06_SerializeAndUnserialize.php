@@ -1,4 +1,5 @@
 <?php
+include_once './01_classes/Singleton.php';
 
 $iVar = 1;
 $sSerialized    = serialize($iVar);

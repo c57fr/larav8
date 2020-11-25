@@ -20,7 +20,8 @@
     //include_once 'cours/04_controller.php';
     //include_once 'cours/05_Controller.php';
 
-    include_once 'cours/06_SerializeAndUnserialize.php';
+    //include_once 'cours/06_SerializeAndUnserialize.php';
+    include_once 'cours/06_Controller.php';
 
     ?>
 </body>
