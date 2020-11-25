@@ -10,3 +10,10 @@ echo '</pre>';
 
 echo '<br>';
 
+$aTableau = array('Riri','Fifi','Loulou','Donald','Picsou');
+$sSerialized = serialize($aTableau);
+$aUnserialized = unserialize($sSerialized);
+ 
+echo '<pre>';
+var_dump($sSerialized,$aUnserialized);
+echo '</pre>';
