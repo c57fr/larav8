@@ -26,9 +26,9 @@
 
     // include_once 'cours/05_Singleton.php';
 
-    include_once 'cours/06_SerializeAndUnserialize.php';
+    // include_once 'cours/06_SerializeAndUnserialize.php';
 
-    // include_once 'cours/07_Controller.php';
+    include_once 'cours/07_AbstractClass.php';
 
     ?>
 </body>
