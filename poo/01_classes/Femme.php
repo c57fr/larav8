@@ -9,4 +9,16 @@ class Femme extends EtreHumain
       $this->nom  = $nom;
       $this->sexe = 'F';  
     }
+
+    // Affiche le sport de la femme
+    public function faireDuSport()
+    {
+        echo $this->nom .' fait du fitness';
+    }
+
+    // Affiche la distraction de la femme
+    public function seDivertir()
+    {
+        echo 'Shopping entre filles';
+    }
 }

@@ -9,5 +9,16 @@ class Homme extends EtreHumain
         $this->sexe = 'M';
     }
 
+    // Affiche le sport de l'homme
+    public function faireDuSport()
+  {
+    echo $this->nom .' fait de la boxe';
+  }
+
+  // Affiche la distraction de l'homme
+  public function seDivertir()
+  {
+    echo 'Soirée foot et bières';
+  }
 
 }
