@@ -21,7 +21,8 @@
     //include_once 'cours/05_Controller.php';
 
     //include_once 'cours/06_SerializeAndUnserialize.php';
-    include_once 'cours/06_Controller.php';
+    //include_once 'cours/06_Controller.php';
+    include_once 'cours/07_Controller.php';
 
     ?>
 </body>
