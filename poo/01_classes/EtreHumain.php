@@ -5,6 +5,12 @@ abstract class EtreHumain
 
     protected $_nom;
 
+    // La personne fait du sport
+    abstract function faireDuSport();
+
+    // Divertit la personne
+    abstract function seDivertir();
+
     // Met à jour le nom
     public function setNom($nom)
     {
