@@ -1,5 +1,5 @@
 <?php
-include_once 'homme.php';
+include_once 'Homme.php';
 class JeuneGarcon extends Homme
 {
     // onstruit l'objet JeuneGarcon
