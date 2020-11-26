@@ -1,17 +1,21 @@
 <?php
 
-class Point{
+/*
+ * Ce fichier est la propriété de larav8 (c) 2020
+ */
 
-    //Atributs
-        // Abscisse du point
-    protected $_x = 0;
-        // Ordonnée du point
-    protected $_y = 0;
+class Point
+{
+  //Atributs
+  // Abscisse du point
+  protected $_x = 0;
+  // Ordonnée du point
+  protected $_y = 0;
 
-    // Methodes
-    public function setCoords($x, $y)
-    {
-        $this->_x = (int) $x;
-        $this->_y = (int) $y;
-    }
+  // Methodes
+  public function setCoords($x, $y)
+  {
+    $this->_x = (int) $x;
+    $this->_y = (int) $y;
+  }
 }
