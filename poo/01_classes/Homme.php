@@ -1,6 +1,6 @@
 <?php
 include_once 'EtreHumain.php';
-class Homme extends EtreHumain
+final class Homme extends EtreHumain
 {
     // Construit l'objet Homme
     public function __construct($nom)
