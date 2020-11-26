@@ -21,4 +21,10 @@ final class Homme extends EtreHumain
     echo 'Soirée foot et bières';
   }
 
+  //Retourne le sexe
+  public function getSexe()
+  {
+    return 'Masculin';
+  }
+
 }

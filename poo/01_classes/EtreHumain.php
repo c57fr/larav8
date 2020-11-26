@@ -12,13 +12,13 @@ abstract class EtreHumain
     abstract function seDivertir();
 
     // Met à jour le nom
-    public function setNom($nom)
+    public final function setNom($nom)
     {
         $this->nom = $nom;
     }
 
     // Retourne le nom de la personne
-    public function getNom()
+    public final function getNom()
     {
         return $this->nom;
     }
