@@ -13,12 +13,12 @@ final class Femme extends EtreHumain
     // Affiche le sport de la femme
     public function faireDuSport()
     {
-        echo $this->nom .' fait du fitness';
+        echo $this->nom .' fait du fitness<br>';
     }
 
     // Affiche la distraction de la femme
     public function seDivertir()
     {
-        echo 'Shopping entre filles';
+        echo 'Shopping entre filles<br>';
     }
 }
