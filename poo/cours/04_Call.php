@@ -1,13 +1,13 @@
 <?php
 
-include_once './01_classes/Manchot.php';
-include_once './01_classes/SearchEngine.php';
+/*
+ * Ce fichier est la propriété de larav8 (c) 2020
+ */
 
-/*$george = new Manchot();
-echo $george->voler('Afriaue'); */
+include_once './01_classes/Call.php';
 
-$mySearchEngine = new SearchEngine();
-$mySearchEngine->search(array(
-    'champ1' => 'apprendre-php',
-    'champ2' => 'palleas'
-));
+$george = new Call();
+$george->langage('PHP', 'Js');
+$george->os('Win10', 'Linux');
+
+// → Vous avez appelé la methode langage avec les arguments : PHP
