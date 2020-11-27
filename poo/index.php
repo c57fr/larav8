@@ -28,7 +28,8 @@
 
     // include_once 'cours/06_SerializeAndUnserialize.php';
 
-    include_once 'cours/07_AbstractClass.php';
+    // include_once 'cours/07_AbstractClass.php';
+    include_once 'cours/04_CallBis.php';
 
     ?>
 </body>
