@@ -4,7 +4,7 @@
  * Ce fichier est la propriété de larav8 (c) 2020
  */
 
-include_once './01_classes/Call.php';
+include_once './classes/Call.php';
 
 $george = new Call();
 $george->langage('PHP', 'Js');

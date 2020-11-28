@@ -24,7 +24,7 @@ echo '</pre>';
 
 echo str_repeat('-', 90);
 
-include_once './01_classes/Dormeur.php';
+include_once './classes/Dormeur.php';
 
 $oDormeur      = new Dormeur();
 $sSerialized   = serialize($oDormeur);

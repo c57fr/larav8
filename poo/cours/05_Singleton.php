@@ -4,9 +4,9 @@
  * Ce fichier est la propriété de larav8 (c) 2020
  */
 
-include_once './01_classes/Point.php';
-include_once './01_classes/Sheep.php';
-include_once './01_classes/Singleton.php';
+include_once './classes/Point.php';
+include_once './classes/Sheep.php';
+include_once './classes/Singleton.php';
 
 $oDot = new Point();
 $oDot->setCoords(10, 10);

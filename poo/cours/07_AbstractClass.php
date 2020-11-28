@@ -4,8 +4,8 @@
  * Ce fichier est la propriété de larav8 (c) 2020
  */
 
-include_once './01_classes/Homme.php';
-include_once './01_classes/Femme.php';
+include_once './classes/Homme.php';
+include_once './classes/Femme.php';
 
 //$oBob = new Homme('Bobby');
 //echo $oBob->getNom();
