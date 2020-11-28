@@ -18,5 +18,21 @@ class SearchEngineBis
       return $return;
     }
 
+    public function __call($method, $args)
+    {
+      if(preg_match('#^searchby#i', $method))
+      {
+        $searchConditions = srt_replace('searchBy', '', $method);
+        $searchCriterias = explode('and', $searchConditions);
+        $conditions      = array();
+        $nbCriterias     = sizeof($searchCriterias);
+
+        for ($i = 0; $i < $nbCriterias; $i++)
+        {
+          $conditions[] = strtolower($searchCriterias[$i]).'="'.$args[$i] .'"';
+        }
+        return $this->search($conditions);
+      }
+    }
 
 }
