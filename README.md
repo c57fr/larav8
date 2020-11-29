@@ -8,8 +8,13 @@ Synchro des dépôts
 ## Tuto POO
 Dans poo/
 
-## Tuto Laravel8
+## Tuto Laravel 8
 
+https://laravel.sillo.org/laravel-8
+
+Poursuivre avec:
+
+https://laravel.sillo.org/voyager-presentation-2
 
 ## Outils pré-réglés 
  
