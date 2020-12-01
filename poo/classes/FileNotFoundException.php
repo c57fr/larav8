@@ -1,9 +1,25 @@
 <?php
 
+// Fichier FileException.class.php
+
+class FileException extends Exception
+{
+    protected $timestamp;
+
+    public function __construct($message=NULL, $code=0)
+    {
+        parent::__construct($message, $code);
+        $this->timestamp=time();
+    }
+    public function getTimestamp()
+    {
+        return $this->timestamp;
+    }
+}
+
 //  Fichier FileNotFoundException.class.php
 class FileNotFoundException extends Exception
 {
-    protected $timestamp;
 
     public function __construct($message=NULL, $code=0)
     {
@@ -21,7 +37,6 @@ class FileNotFoundException extends Exception
 //  Fichier FileNotWriteableException.class.php
 class FileNotWriteableException extends exception 
 {
-    protected $timestamp;
 
     public function __construct($message=NULL, $code=0)
     {
