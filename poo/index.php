@@ -17,13 +17,14 @@
     // include_once 'cours/03_Controller.php';
     // include_once 'cours/03_Vue.php';
 
-    include_once 'cours/04_Call.php';
+    // include_once 'cours/04_Call.php';
 
     // include_once 'cours/05_Singleton.php';
 
     // include_once 'cours/06_SerializeAndUnserialize.php';
 
     // include_once 'cours/07_AbstractClass.php';
+     include_once 'cours/08_ExceptionPartie8.php';
 
     ?>
 </body>
