@@ -14,7 +14,7 @@
 
   echo 'Bonjour Emacs';*/
 
-  try{
+  /*try{
     $password = 'Toto';
 
     if('Emacs' !== $password){
@@ -22,6 +22,35 @@
     }
 
     echo 'Bonjour Emacs';
+  }
+  catch(Exception $e)
+  {
+    echo "L'erreur suivante a été générée : ". "\n";
+    echo $e->getMessage();
+  }*/
+
+  $login = 'Titi';
+  $password = 'Toto';
+
+  try
+  {
+      if('Hello' !== $password)
+      {
+        throw new Exception('Votre password est incorrect !');
+      }
+      try
+      {
+        if('Emacs' !== $password)
+        {
+        throw new Exception('Votre password est incorrect !');       
+        }
+        echo 'Bonjour Emacs';
+      }
+      catch(Exception $e)
+      {
+        echo "L'erreur suivante a été générée : ". "\n";
+        echo $e->getMessage();
+      }
   }
   catch(Exception $e)
   {
