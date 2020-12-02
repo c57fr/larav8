@@ -1,5 +1,5 @@
 <?php
-
+include_once 'Exception.php';
 // Fichier FileException.class.php
 
 class FileException extends Exception

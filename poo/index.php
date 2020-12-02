@@ -24,7 +24,8 @@
     // include_once 'cours/06_SerializeAndUnserialize.php';
 
     // include_once 'cours/07_AbstractClass.php';
-     include_once 'cours/08_ExceptionPartie8.php';
+    //include_once 'cours/08_ExceptionPartie8.php';
+    include_once 'cours/08_ExceptionPartie8Bis.php';
 
     ?>
 </body>
