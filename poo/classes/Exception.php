@@ -17,4 +17,8 @@ class Exception
     final function getTraceAsString();        // chaîne formattée de trace
 
     function __toString();                    // chaîne formatée pour l'affichage
+
+
+
+
 }

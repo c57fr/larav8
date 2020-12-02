@@ -56,3 +56,28 @@ include_once './classes/FileNotFoundException.php';
     // Je stoppe tout
     exit($e->getMessage());
   }
+
+      /**
+   * Fonction de rappel appellée automatiquement par l'exception handler
+   *
+   * @param Exception $e une exception lancée et perdue dans le programme
+   * @return void
+   */
+
+  function traitementExceptionPerdue(Exception $e) {
+ 
+    echo 'Une exception orpheline a été attrapée : ';
+    echo $e->getMessage(), "\n";
+    exit;
+  }
+/**
+* Enregistrement de la fonction de rappel dans l'exception handler de PHP
+*/
+set_exception_handler('traitementExceptionPerdue');
+
+// Exemple de génération d'exception perdu
+$password = 'Toto';
+if('Emacs' !== $password) {
+  throw new Exception('Votre password est incorrect !');
+}
+echo 'Bonjour Emacs'; 
