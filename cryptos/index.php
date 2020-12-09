@@ -12,7 +12,7 @@
 <div class="container flex">
 <?php
 $i      = 0;
-$tokens = ['ALGOUSD', 'FILUSD', 'KSMUSD', 'ZECUSD'];
+$tokens = ['ALGOUSD', 'XDGUSD', 'FILUSD', 'KSMUSD', 'ZECUSD'];
 foreach ($tokens as $tk) {
   ++$i;
   $tk = 'KRAKEN:'.$tk; ?>
