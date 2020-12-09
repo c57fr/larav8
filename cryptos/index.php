@@ -44,7 +44,7 @@ foreach ($tokens as $tk) {
  
   <footer>
     <div class="tradingview-widget-copyright"><a href="https://fr.tradingview.com/symbols/ALGOUSD/technicals/"
-    rel="noopener" target="_blank"><span class="blue-text"> Analyse technique pour ALGOUSD</span></a> par
+    rel="noopener" target="_blank"><span class="blue-text"> Analyse technique pour tokens</span></a> par
     TradingView</div>
   </footer>
 </body>
