@@ -10,11 +10,13 @@ Dans poo/
 
 ## Tuto Laravel 8
 
-https://laravel.sillo.org/laravel-8
+- https://laravel.sillo.org/laravel-8
 
 Poursuivre avec:
 
-https://laravel.sillo.org/voyager-presentation-2
+- https://laravel.sillo.org/voyager-presentation-2
+- https://laravel.sillo.org/un-peu-de-style
+
 
 ## Outils pré-réglés 
  
