@@ -20,7 +20,8 @@ class Kid
   }
 
   // Methodes magiques __set()
-  public function __set($property, $value)
+  public function __set($property,
+ $value)
   {
     if ('age' === $property && is_numeric($value)) {
       $this->age = (int) $value;

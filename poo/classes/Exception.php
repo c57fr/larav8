@@ -7,7 +7,8 @@ class Exception
     protected $line;                            // ligne de la source de l'exception
 
 
-    function __construct(string $message=NULL, int $code=0);
+    function __construct(string $message=NULL,
+ int $code=0);
  
     final function getMessage();              // message de l'exception
     final function getCode();                 // code de l'exception

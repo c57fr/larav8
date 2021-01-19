@@ -13,7 +13,8 @@ class Point
   protected $_y = 0;
 
   // Methodes
-  public function setCoords($x, $y)
+  public function setCoords($x,
+ $y)
   {
     $this->_x = (int) $x;
     $this->_y = (int) $y;

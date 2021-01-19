@@ -9,20 +9,28 @@ $sSerialized   = serialize($iVar);
 $iUnserialized = unserialize($sSerialized);
 
 echo '<pre>';
-var_dump($sSerialized, $iUnserialized);
+var_dump($sSerialized,
+ $iUnserialized);
 echo '</pre>';
 
-echo str_repeat('-', 90);
+echo str_repeat('-',
+ 90);
 
-$aTableau      = ['Riri', 'Fifi', 'Loulou', 'Donald', 'Picsou'];
+$aTableau      = ['Riri',
+ 'Fifi',
+ 'Loulou',
+ 'Donald',
+ 'Picsou'];
 $sSerialized   = serialize($aTableau);
 $aUnserialized = unserialize($sSerialized);
 
 echo '<pre>';
-var_dump($sSerialized, $aUnserialized);
+var_dump($sSerialized,
+ $aUnserialized);
 echo '</pre>';
 
-echo str_repeat('-', 90);
+echo str_repeat('-',
+ 90);
 
 include_once './classes/Dormeur.php';
 
@@ -31,7 +39,9 @@ $sSerialized   = serialize($oDormeur);
 $oUnserialized = unserialize($sSerialized);
 
 echo '<pre>';
-var_dump($sSerialized, $oUnserialized);
+var_dump($sSerialized,
+ $oUnserialized);
 echo '</pre>';
 
-echo str_repeat('-', 90);
+echo str_repeat('-',
+ 90);

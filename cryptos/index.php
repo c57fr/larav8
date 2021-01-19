@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,
+ initial-scale=1.0">
   <title>Cryptos</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +13,15 @@
 <div class="container flex">
 <?php
 $i      = 0;
-$tokens = ['ALGOUSD', 'BTCUSD', 'COMPUSD', 'XDGUSD', 'DOTUSD', 'FILUSD', 'GNOUSD', 'KSMUSD', 'ZECUSD'];
+$tokens = ['ALGOUSD',
+ 'BTCUSD',
+ 'COMPUSD',
+ 'XDGUSD',
+ 'DOTUSD',
+ 'FILUSD',
+ 'GNOUSD',
+ 'KSMUSD',
+ 'ZECUSD'];
 foreach ($tokens as $tk) {
   ++$i;
   $tk = 'KRAKEN:'.$tk; ?>
@@ -22,12 +31,19 @@ foreach ($tokens as $tk) {
       src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
       {
         "interval": "1m",
+
         "width": "720",
+
         "isTransparent": false,
+
         "height": "435",
+
         "symbol": "<?php echo $tk; ?>",
+
         "showIntervalTabs": true,
+
         "locale": "fr",
+
         "colorTheme": "light"
       }
     </script>

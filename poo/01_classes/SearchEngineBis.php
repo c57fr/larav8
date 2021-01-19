@@ -9,7 +9,8 @@ class SearchEngineBis
         $query = 'SELECT id FROM table';
  
       if(sizeof($conditions) > 0) {
-        $query.=' WHERE '.implode(' AND ',$conditions);
+        $query.=' WHERE '.implode(' AND ',
+$conditions);
       }
  
       // Exécution de la requête SQL avec une classe PDO
@@ -18,12 +19,17 @@ class SearchEngineBis
       return $return;
     }
 
-    public function __call($method, $args)
+    public function __call($method,
+ $args)
     {
-      if(preg_match('#^searchby#i', $method))
+      if(preg_match('#^searchby#i',
+ $method))
       {
-        $searchConditions = srt_replace('searchBy', '', $method);
-        $searchCriterias = explode('and', $searchConditions);
+        $searchConditions = srt_replace('searchBy',
+ '',
+ $method);
+        $searchCriterias = explode('and',
+ $searchConditions);
         $conditions      = array();
         $nbCriterias     = sizeof($searchCriterias);
 

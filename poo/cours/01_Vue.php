@@ -16,7 +16,8 @@
         echo 'Chaque personne a '.Personne::NOMBRE_DE_YEUX.' yeux<br/>';
         echo 'Chaque personne a '.Personne::NOMBRE_DE_MAINS.' mains<br/>';
 
-        echo str_repeat('-', 90).'<br/>';
+        echo str_repeat('-',
+ 90).'<br/>';
 
         // Appel de méthode sur des objets
         echo 'Appel de méthode sur des objets<br/><br/>';

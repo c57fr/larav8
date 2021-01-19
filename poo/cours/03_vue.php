@@ -5,5 +5,6 @@
  */
 
 echo $billy->age;
-echo '<br>'.str_repeat('-', 90).'<br>';
+echo '<br>'.str_repeat('-',
+ 90).'<br>';
 echo 'Exo 3<br>';

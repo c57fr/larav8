@@ -13,11 +13,13 @@ include_once './classes/Femme.php';
 $oAlice = new Femme('Alice');
 $oAlice->faireDuSport();
 $oAlice->seDivertir();
-echo 'Sexe : ', $oAlice->getSexe();
+echo 'Sexe : ',
+ $oAlice->getSexe();
 
 echo '<br/><br/>';
 
 $oBob = new Homme('Bobby');
 $oBob->faireDuSport();
 $oBob->seDivertir();
-echo 'Sexe : ', $oBob->getSexe();
+echo 'Sexe : ',
+ $oBob->getSexe();

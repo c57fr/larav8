@@ -6,8 +6,11 @@
 
 class Call
 {
-  public function __call($method, $arguments)
+  public function __call($method,
+ $arguments)
   {
-    echo 'Vous avez appelé la methode <strong>'.$method.'</strong> avec les arguments: <strong>'.implode(', ', $arguments).'</strong>.<br>';
+    echo 'Vous avez appelé la methode <strong>'.$method.'</strong> avec les arguments: <strong>'.implode(',
+ ',
+ $arguments).'</strong>.<br>';
   }
 }

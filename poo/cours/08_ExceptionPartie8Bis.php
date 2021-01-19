@@ -27,13 +27,15 @@ include_once './classes/FileNotFoundException.php';
     }
 
     // A-t-on ouvert le fichier en mode écriture ?
-    if(!($fp = @fopen($fichier, 'w')))
+    if(!($fp = @fopen($fichier,
+ 'w')))
     {
         throw new FileException('L\'ouverture du fichier '. $fichier .' a échoué');
     }
 
     //  J'écris dans mon fichier
-    fwrite($fp, "Coucou Emacs\n");
+    fwrite($fp,
+ "Coucou Emacs\n");
 
     // Puis je ferme mon fichier
     fclose($fp);
@@ -67,7 +69,8 @@ include_once './classes/FileNotFoundException.php';
   function traitementExceptionPerdue(Exception $e) {
  
     echo 'Une exception orpheline a été attrapée : ';
-    echo $e->getMessage(), "\n";
+    echo $e->getMessage(),
+ "\n";
     exit;
   }
 /**

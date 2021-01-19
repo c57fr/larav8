@@ -6,9 +6,11 @@ class FileException extends Exception
 {
     protected $timestamp;
 
-    public function __construct($message=NULL, $code=0)
+    public function __construct($message=NULL,
+ $code=0)
     {
-        parent::__construct($message, $code);
+        parent::__construct($message,
+ $code);
         $this->timestamp=time();
     }
     public function getTimestamp()
@@ -21,9 +23,11 @@ class FileException extends Exception
 class FileNotFoundException extends Exception
 {
 
-    public function __construct($message=NULL, $code=0)
+    public function __construct($message=NULL,
+ $code=0)
     {
-        parent::__construct($message, $code);
+        parent::__construct($message,
+ $code);
         $this->timestamp = time();
     }
 
@@ -38,9 +42,11 @@ class FileNotFoundException extends Exception
 class FileNotWriteableException extends exception 
 {
 
-    public function __construct($message=NULL, $code=0)
+    public function __construct($message=NULL,
+ $code=0)
     {
-        parent::__construct($message, $code);
+        parent::__construct($message,
+ $code);
         $this->timestamp = time();
     }
 

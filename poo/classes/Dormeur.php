@@ -19,18 +19,24 @@ class Dormeur
     $this->_age             = 19;
     $this->_aSonBonnet      = true;
     $this->_couleurPreferee = 'rouge';
-    $this->_gouts           = ['musique', 'cinéma', 'curling'];
+    $this->_gouts           = ['musique',
+ 'cinéma',
+ 'curling'];
   }
 
   public function __sleep()
   {
-    echo 'Bon ben moi, je vais dormir.';
+    echo 'Bon ben moi,
+ je vais dormir.';
 
-    return ['_age', '_aSonBonnet', '_couleurPreferee'];
+    return ['_age',
+ '_aSonBonnet',
+ '_couleurPreferee'];
   }
 
   public function __wakeup()
   {
-    echo 'bon ben moi, je vais me faire un café.';
+    echo 'bon ben moi,
+ je vais me faire un café.';
   }
 }

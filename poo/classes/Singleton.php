@@ -10,7 +10,8 @@ class Singleton
 
   public function __clone()
   {
-    throw new Exception('Are you Trying to clone me ? I\'m a Singleton, dude !');
+    throw new Exception('Are you Trying to clone me ? I\'m a Singleton,
+ dude !');
   }
 
   public static function getInstance()
